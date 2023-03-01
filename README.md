@@ -1,2 +1,2 @@
 # InquiryFavorite
- Templete simples para um site com a finalidade de salva/favoritar sites dos usuário.
+ Templete simples para um site com a finalidade de salva/favoritar
