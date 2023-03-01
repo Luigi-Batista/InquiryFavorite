@@ -1,0 +1,16 @@
+/* Variáveis CSS */
+:root{
+    
+    /* Paleta de Cores */
+    --ColorBack: #ff8317;
+    --ColorIcon: #2d2b29;
+    --CbackSection: #f9f9f9;
+    --Shadow: #9b9b9ba8;
+    --Cmodal: #2d2b295a;
+
+    /* Valores Altura Tela */
+    --WidthScren: 100vw;
+    --HeigthScren: 100vh;
+    --TopHeight: 20vh;
+
+}

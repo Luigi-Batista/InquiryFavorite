@@ -1,0 +1,30 @@
+/* Animação de entrada para modal */
+@keyframes AniModal {
+    from{
+        
+        opacity: 0;
+    
+    }
+    to{
+        
+        opacity: 1;
+    }
+}
+
+/* Animação de entrada para os Formulários do modal */
+@keyframes AniForms {
+    from{
+        transform: scale(.90);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes AniIcon {
+    from{
+        transform: scale(.90);
+    }
+    to{
+        transform: scale(1);
+    }
+}

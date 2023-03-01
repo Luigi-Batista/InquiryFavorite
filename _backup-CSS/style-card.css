@@ -1,0 +1,256 @@
+@import "/css/style-main.css";
+
+/* Estilização Cards */
+.card{
+    position: relative;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 15px;
+    background-color: #fcfcfc;
+    box-shadow: 0 0 8px var(--Shadow);
+}
+
+/* Sessão do Usuário */
+.user{
+    position: absolute;
+    top: -8.2rem;
+    /* left: 5rem;
+    width: 750px; */
+    width: 100%;
+
+    max-height: 10rem;
+    min-height: 10rem;
+
+    padding: 1rem 3rem;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 990;
+}
+.user #foto{
+    padding: .3rem .5rem;
+
+    background-color: white;
+    border: 5px solid var(--ColorBack);
+    border-radius: 15%;
+    overflow: hidden;
+}
+.user i{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    color: var(--ColorIcon);
+    font-size: 5.3rem;
+}
+.user #imag-profile{
+    background-color: white;
+    border: 10px solid #ffffff;
+    border-radius: 15%;
+    box-shadow: 0 0 8px var(--Shadow);
+    box-sizing: border-box;
+}
+
+.info-user{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+.info-user label{
+    position: absolute;
+    top: 1.2rem;
+    left: 1.5rem;
+
+    font-family: 'Staatliches';
+    font-size: 3rem;
+    letter-spacing: .15rem;
+}
+.info-user #btns{
+    position: absolute;
+    bottom: .5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.info-user #btns button{
+    padding: .3rem 1.3rem;
+    cursor: pointer;
+
+    font-family: 'Dosis', sans-serif ;
+    font-weight: 550;
+    font-size: .98rem;
+    letter-spacing: .2rem;
+    
+    border: 2px solid var(--ColorBack);
+    border-radius: .3rem;
+    background-color: var(--ColorBack);
+    color: white;
+    text-transform: uppercase;
+    transition: .18s;
+}
+.info-user #btns button:hover{
+    transform: scale(1.08);
+}
+#btns #alterar{
+    color: var(--ColorIcon);
+    background-color: white;
+}
+
+.view{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    min-height: 90%;
+    max-height: 90%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: .3rem .8rem;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+/* Sessão da Lista de Favorito */
+.space-list{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+
+    border-radius: 10px;
+}
+.list{
+    width: 100%;
+    height: 100%;
+    
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    background-color: transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+.list span{
+    position: relative;
+    
+    width: 100%;
+    padding: .9rem 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    box-shadow: 0 0 8px var(--Shadow);
+}
+.list span i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: var(--ColorIcon);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.list label{
+    font-family: 'Staatliches';
+    font-size: 1.6rem;
+    font-weight: 200;
+    letter-spacing: .3rem;
+}
+.list span #add{
+    position: absolute;
+    right: .9rem;
+    transition: .18s;
+}
+.list span #add:hover{
+    transform: scale(1.10);
+}
+#list-site{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 1.5rem;
+    
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+.site{
+    position: relative;
+    
+    width: 100%;
+    max-height: 1.5rem;
+    min-height: 1.5rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--Shadow);
+    transition: .18s;
+}
+.site label{
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+    font-weight: 300;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+.site i::before{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: var(--ColorIcon);
+    background-color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.card .site:hover{
+    transform: scale(1.05);
+}
+.card .site #linkweb{
+    position: absolute;
+    font-size: 1.38rem;
+    right: .8rem;
+}

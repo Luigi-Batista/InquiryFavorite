@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style-main.css">
+    <link rel="stylesheet" href="./css/style-mobile.css">
+
+    <link rel="shortcut icon" href="./Icone-Site/Icone-site.ico" type="image/x-icon">
+    <title>Inquiry Favorite</title>
+</head>
+<body>
+    <!-- Espaço pai da Página -->
+    <div class="space">
+
+            <!-- Início de Conteúdo -->
+            <div id="back-image">
+                
+            </div>
+            
+            
+            <div id="section">
+
+                <!-- Cards de Conteúdo -->
+
+                <div class="section-view">
+
+                    <div class="card user">
+                        
+                        <div id="imag-profile">
+                            
+                            <div id="foto">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            
+                        </div>
+
+                        <div class="info-user">
+
+                            <label for="nome">Nome do Usuário</label>
+
+                            <div id="btns">
+
+                                <button type="submit" id="delete" class="efect-hover">
+                                    EXCLUIR
+                                </button>
+
+                                <button id="alterar">
+                                    ALTERAR
+                                </button>
+
+                            </div>
+
+                            
+                        </div>
+                        
+                        <button id="hamb-float">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                        
+                    </div>
+
+                    <div class="card view">
+                        
+                        <form id="view-site" action="" method="POST" enctype="multipart/form-data">
+                            
+                            
+                        <div class="cont-form">        
+                            <div class="fild">
+
+                                <input type="text" name="nomeSite" id="nomeSite" placeholder=" "
+                                maxlength="100">
+                                <label for="nomeSite">Assunto</label>
+                                
+                            </div>
+
+                            <div class="fild">
+
+                                <input type="url" name="url" id="url" placeholder=" " maxlength="500">
+                                <label for="url">Link</label>
+
+                            </div>
+
+                            <div id="space-descri">
+
+                                <label for="descri">Descrição</label>
+                                <textarea name="descri" id="descri" cols="30" rows="7" maxlength="600" resize="none"></textarea>
+                                <label id="char">0/600</label>
+
+                            </div>
+                        </div>    
+
+                            <div class="btn">
+                                    <button type="submit">Cadastrar</button>
+
+                                    <button type="submit">Modificar</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+                
+                <div class="space-list">
+                    
+                    <div class="card list">
+                        
+                        <span> 
+
+                            <i class="fa-solid fa-bars bars-btn"></i>
+                            <i class="fa-solid fa-x close-btn"></i>
+                            <label for="Lista">Lista de Favorito</label> 
+                            <div id="add"><i class="fa-solid fa-plus"></i></div>
+                            
+                        </span>
+
+                        <div id="list-site">
+
+                            <div class="card site">
+                                
+                                <i class="fa-solid fa-chevron-left"></i>
+
+                                <a href="">
+                                    <label for="NameSite">
+                                        Texto de Exemplo Site
+                                    </label>
+                                </a>
+                                
+                                <div class="action-button">
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-up-right-from-square" id="linkweb"></i>
+                                    </a>
+
+                                    <a href="#">
+                                        <i id="trash" class="fi fi-br-trash"></i>
+                                    </a>
+
+                                </div>
+
+                                
+                            </div>
+                            
+                        </div>
+
+                    </div>                              
+                    
+                </div>
+
+            </div>
+
+    </div>
+
+    <!-- hambuguer float e modal -->
+    <div class="modal alt-user">
+
+        <div id="imag-profile">
+                        
+            <div id="foto">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+            
+        </div>
+        
+        
+        <form action="" id="alt-user">
+            
+            
+            <!-- Icone de fechamento -->
+                <div id="close-user">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            
+            
+            <div class="fild">
+
+                <input type="text" name="nomeUser" id="nomeUser" placeholder=" "
+                maxlength="100">
+                <label for="nomeUser">Nome de Usuário</label>
+                
+            </div>
+
+            <div class="fild">
+
+                <input type="text" name="email" id="email" placeholder=" " maxlength="500">
+                <label for="email">Email</label>
+
+            </div>
+
+            <div class="fild">
+
+                <input type="password" name="password" id="password" placeholder=" " maxlength="500" autocomplete="off">
+                <label for="password">Senha</label>
+                <i class="far fa-eye-slash" id="pass"></i>
+
+            </div>
+
+            <div class="btn">
+
+                    <button type="submit">Alterar</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="modal cad-site" style="display: none;">  
+
+        <form action="" id="cad-site">
+            
+        </form>
+
+    </div>
+    
+
+    
+
+    <!--Script JS-->
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/98d5e17a16.js" crossorigin="anonymous"></script>
+</body>
+</html>

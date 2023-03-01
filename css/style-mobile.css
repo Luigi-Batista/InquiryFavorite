@@ -1,0 +1,248 @@
+@import 'style-main.css';
+
+@media(max-width: 999px){
+    
+    .space #section{
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+    }
+    
+    .user{
+        max-height: 10rem;
+        min-height: 10rem;
+        
+        top: -8rem;
+        
+        padding: .5rem 1rem;
+        
+        overflow: visible;
+    }
+    .user #imag-profile{
+        position: absolute;
+        top: -.5rem;
+        left: -.5rem;
+    }
+    .user i{
+        font-size: 3.5rem;
+        background-color: white;
+    }
+    .info-user{
+        overflow: hidden;
+    }
+    .info-user label{
+        top: 1rem;
+        left: 5.3rem;
+        font-size: 2rem;
+        overflow: hidden;
+    }
+    .info-user #btns{
+        bottom: .8rem;
+        
+        gap: 1rem;
+    }
+    .info-user #btns button{
+        cursor: none;
+    }
+    
+    .view{
+        position: absolute;
+        top: auto;
+        bottom: 0 !important;
+        
+        padding-top: 1rem;
+        
+        min-height: 90%;
+        max-height: 90%;
+    }
+    
+    .space-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        max-width: 100vw;
+        min-width: 100vw;
+        max-height: 100vh;
+        min-height: 100vh;
+        display: none;
+        
+        backdrop-filter: blur(2px);
+        background-color: var(--Cmodal);
+        border-radius: 0;
+        z-index: 1000;
+    }
+
+    
+    #liste-site{
+        gap: .8rem;
+    }
+    .list{
+        position: absolute;
+        bottom: 0;
+        height: 95%;
+
+        transform: scale(.90);
+        
+        /* background-color: #f5f5f5; */
+        background-color: var(--CbackSection);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        
+        animation-name: AniForms;
+        animation-duration: .25s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: .1s;
+    }
+    .list label{
+        margin-left: .3rem;
+    }
+
+    .list .bars-btn{
+        display: none;
+    }
+    .list .close-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: none;
+
+        padding: 0 .3rem;
+    }
+    
+    .site{
+        width: 85%;
+        max-height: 2rem;
+        min-height: 2rem;
+    }
+    .site label{
+        font-size: 1.55rem;
+    }
+    .site i::before{
+        font-size: 1.55rem;
+    }
+    
+    .view{
+        min-height: 93%;
+        max-height: 93%;
+    }
+    .view #view-site{
+
+        padding-top: 1rem;
+        padding-right: 1.3rem;
+        padding-left: 1.3rem;
+        
+    }
+
+    .view #view-site .fild label{
+        cursor: none;
+        font-size: 1.5rem;
+    }
+    .view #view-site .fild input[type='text'], .view #view-site .fild input[type='text']{
+        font-size: 1.5rem;
+    }
+
+    .view #view-site #space-descri{
+        font-size: 1.4rem;
+    }
+
+    #view-site .btn{
+        margin-top: 2rem;
+
+        flex-direction: column;
+        gap: .8rem;
+    }
+    
+    #view-site .btn button{
+        font-size: 1.5rem;
+        cursor: none;
+    }
+    
+    #hamb-float{
+        position: absolute;
+        top: -1.3rem;
+        right: -.5rem;
+    
+        display: block;
+        padding: .5rem;
+    
+        border: none;
+        border-radius: 5px;
+        background-color: #fcfcfc;
+        box-shadow: 0 0 10px var(--Shadow);
+        z-index: 1100;
+    }
+    #hamb-float i{
+        font-size: 2rem;
+    }
+
+    #alt-user .fild #pass{
+        cursor: none;
+    }
+
+    /* ---------- Formulários pop-up -------------- */
+
+    .modal{
+        padding: 8rem 0;
+    }
+    #alt-user{
+        max-width: 90%;
+        min-width: 90%;
+        max-height: 70%;
+        min-height: 70%;
+
+        padding-top: 8.95rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .modal.alt-user #imag-profile{
+        top: 5.4rem;
+        left: .85rem;
+    }
+
+    #alt-user .fild label{
+        cursor: none;
+        font-size: 1.5rem;
+    }
+    #alt-user .fild input[type="text"], #alt-user .fild input[type="password"]{
+        font-size: 1.5rem;
+    }
+
+    #alt-user .btn{
+        margin-top: 5rem;
+    }
+    #alt-user .btn button{
+        font-size: 1.85rem;
+    }
+
+    #alt-user .fild #pass{
+        padding: .5rem;
+    }
+}
+
+/* Mobile - Deitado */
+/*
+* Infleizmente não deu certo, não hove tempo para
+* complemetação correta dessa parte do projeto
+* Por isso esta comentada
+*/
+/* @media (max-height: 550px) {
+    #section{
+        display: flex;
+        flex-direction: row;
+    }
+    .section-view{
+        display: flex;
+        flex-direction: row;
+    }
+    .user{
+        width: 50%;
+    }
+    .view{
+        width: 50%;
+    }
+
+} */
